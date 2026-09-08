@@ -1,0 +1,13 @@
+interface:
+  display_name: 参考图建筑工坊
+  short_description: 把建筑风格描述变成多视图参考、参数化模型和可复用 GLB 资产 + L1/L2/L3 progression
+  default_prompt: 使用 $reference-to-building，根据我的建筑需求生成参考图，提取造型规则，完成参数化建模、材质、GLB 导出与验证。 Also support L1/L2/L3 same-building progression with explicit deltas and QA.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
