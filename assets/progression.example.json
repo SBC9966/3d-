@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0",
+  "progressionId": "warm-brick-cafe-progression-001",
+  "familyId": "warm-brick-cafe-001",
+  "identityLock": {
+    "signature": [
+      "corner entrance under a projecting canopy",
+      "warm masonry base with dark metal frames",
+      "primary roof direction and street-facing bay rhythm"
+    ],
+    "preserve": [
+      "entrance side",
+      "primary roof direction",
+      "dominant facade rhythm",
+      "material family"
+    ]
+  },
+  "policy": {
+    "minDeltaGroups": 4,
+    "requireArchitectureDelta": true,
+    "requireDetailDelta": true,
+    "requireTriangleGrowth": true
+  },
+  "levels": [
+    {
+      "level": 1,
+      "id": "warm-brick-cafe-l1",
+      "parentId": null,
+      "role": "base",
+      "specFile": "specs/warm-brick-cafe-l1.json",
+      "deltas": {},
+      "budget": {
+        "triangles": 12000,
+        "textureResolution": 512
+      }
+    },
+    {
+      "level": 2,
+      "id": "warm-brick-cafe-l2",
+      "parentId": "warm-brick-cafe-l1",
+      "role": "developed",
+      "specFile": "specs/warm-brick-cafe-l2.json",
+      "deltas": {
+        "massing": ["add a recessed second-floor terrace"],
+        "facade": ["add deep window reveals and canopy framing"],
+        "interior": ["model visible counter and seating zone"],
+        "furniture": ["add tables, chairs and shelving"],
+        "materials": ["separate brick, stone, metal and glass PBR sets"]
+      },
+      "budget": {
+        "triangles": 24000,
+        "textureResolution": 1024
+      }
+    },
+    {
+      "level": 3,
+      "id": "warm-brick-cafe-l3",
+      "parentId": "warm-brick-cafe-l2",
+      "role": "hero",
+      "specFile": "specs/warm-brick-cafe-l3.json",
+      "deltas": {
+        "massing": ["extend the terrace into a stepped upper volume"],
+        "facade": ["add mullion caps, trim profiles and deeper balcony edges"],
+        "roof": ["add parapet transitions, skylight and roof equipment"],
+        "interior": ["complete visible public interior zones"],
+        "furniture": ["add dense seating, display and service fixtures"],
+        "materials": ["add processed normal, roughness and AO detail with higher local texel density"],
+        "props": ["add exterior lights, planters, gutters and vents"],
+        "animation": ["separate entrance doors and awning pivots for optional motion"]
+      },
+      "budget": {
+        "triangles": 52000,
+        "textureResolution": 2048
+      }
+    }
+  ]
+}
