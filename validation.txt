@@ -1,0 +1,44 @@
+{
+  "progressionId": "warm-brick-cafe-progression-001",
+  "familyId": "warm-brick-cafe-001",
+  "levels": 3,
+  "planValid": true,
+  "summary": [
+    {
+      "level": 1,
+      "id": "warm-brick-cafe-l1",
+      "deltaGroups": []
+    },
+    {
+      "level": 2,
+      "id": "warm-brick-cafe-l2",
+      "deltaGroups": [
+        "facade",
+        "furniture",
+        "interior",
+        "massing",
+        "materials"
+      ]
+    },
+    {
+      "level": 3,
+      "id": "warm-brick-cafe-l3",
+      "deltaGroups": [
+        "animation",
+        "facade",
+        "furniture",
+        "interior",
+        "massing",
+        "materials",
+        "props",
+        "roof"
+      ]
+    }
+  ],
+  "policy": {
+    "minDeltaGroups": 4,
+    "requireArchitectureDelta": true,
+    "requireDetailDelta": true,
+    "requireTriangleGrowth": true
+  }
+}
