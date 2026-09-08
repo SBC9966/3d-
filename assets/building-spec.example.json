@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "id": "building-brick-courtyard-001",
+  "name": "暖砖庭院公寓",
+  "use": "residential",
+  "style": {"name": "contemporary warm masonry", "traits": ["围合庭院", "竖向窗列", "退入阳台", "独立入口门廊"], "avoid": ["随机彩色立面", "封闭庭院", "整楼贴板"]},
+  "dimensions": {"width": 32, "depth": 24, "floors": 6, "floorHeight": 3.2},
+  "massing": {"type": "courtyard", "courtyardWidth": 12, "courtyardDepth": 10},
+  "roof": {"type": "flat", "parapetHeight": 0.9},
+  "facade": {"bayWidth": 3.2, "windowRatio": 0.42, "balconyDepth": 1.3},
+  "materials": [{"id": "muted-brick", "role": "wall"}, {"id": "warm-stone", "role": "base"}, {"id": "blue-gray-glass", "role": "windows"}],
+  "seed": 104729,
+  "variants": 1,
+  "target": {"format": "glb", "units": "m", "upAxis": "Y", "frontAxis": "+Z", "integration": "standalone", "detail": "street"},
+  "budget": {"triangles": 35000, "materialBatches": 10, "textureResolution": 1024},
+  "assumptions": ["尺寸为可调整的建模设定，不是建筑施工设计", "庭院上方保持开放"]
+}
